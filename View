@@ -1,11 +1,11 @@
 <?php 
 include "config.php";
 
-//write the query to get data from users table
+
 
 $sql = "SELECT * FROM users";
 
-//execute the query
+
 
 $result = $conn->query($sql);
 
@@ -16,8 +16,7 @@ $result = $conn->query($sql);
 <html>
 <head>
 	<title>View Page</title>
-	 <!-- to make it looking good im using bootstrap -->
-	 <!-- Latest compiled and minified CSS -->
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
 <body>
@@ -37,7 +36,7 @@ $result = $conn->query($sql);
 	<tbody>	
 		<?php
 			if ($result->num_rows > 0) {
-				//output data of each row
+			
 				while ($row = $result->fetch_assoc()) {
 		?>
 
